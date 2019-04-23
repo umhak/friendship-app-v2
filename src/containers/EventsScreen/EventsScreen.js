@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { TouchableOpacity, View, Text } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import styles from './styles';
 import { colors } from '../../styles';
@@ -37,6 +37,12 @@ class EventsScreen extends React.Component {
 
     return (
       <View style={[styles.eventsList]}>
+        {events.events.length && (
+          <Text style={[styles.title]}>
+            Suggest, Do or Try whatever activities you enjoy with interesting
+            and like-minded people.
+          </Text>
+        )}
         <EventsList
           events={events.events}
           onRefresh={refreshEvents}

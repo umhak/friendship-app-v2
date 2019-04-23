@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors, paddings } from '../../styles';
+import { colors, paddings, fonts } from '../../styles';
 
 export default StyleSheet.create({
   eventsList: {
@@ -7,5 +7,9 @@ export default StyleSheet.create({
     backgroundColor: colors.MEDIUM_GREY,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
+    fontFamily: fonts.BOLD,
+    padding: paddings.MD,
   },
 });
